@@ -1,0 +1,28 @@
+.mens{
+    display: flex;
+    gap: 1%;
+    width:70%;
+    margin: auto;
+    border: 1px solid black;
+}
+/* ***************************filter_category************************************************** */
+
+
+.filter_category{
+    width:25%;
+    height: auto;
+    border: 1px solid black;
+    text-align: left;
+}
+
+
+
+/* ********************************products******************************************************************** */
+
+
+.products{
+    width:74%;
+    height: auto;
+    border: 1px solid black;
+   
+}
