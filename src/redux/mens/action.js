@@ -1,3 +1,4 @@
+import axios from "axios";
 import * as types from "./actionType";
 
 const mensProductFetchRequest=()=>{
@@ -23,6 +24,9 @@ const mensProductFetchFailure=()=>{
 export const mensDataGet=(payload)=>(dispatch)=>{
 dispatch(mensProductFetchRequest());
 axios.get("http://localhost:8080/mens")
-.then((r)=>dispatch(mensProductFetchSuccess(r.data)))
+.then((r)=>
+
+dispatch(mensProductFetchSuccess(r.data))
+)
 .catch((e)=>dispatch(mensProductFetchFailure(e.data)))
 }
