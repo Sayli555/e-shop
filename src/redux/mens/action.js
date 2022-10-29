@@ -21,9 +21,9 @@ const mensProductFetchFailure=()=>{
 }
 
 
-export const mensDataGet=(payload)=>(dispatch)=>{
+export const mensDataGet=(params)=>(dispatch)=>{
 dispatch(mensProductFetchRequest());
-axios.get("http://localhost:8081/mens")
+axios.get("http://localhost:8081/mens",params)
 .then((r)=>
 
 dispatch(mensProductFetchSuccess(r.data))

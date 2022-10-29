@@ -11,7 +11,7 @@ const Product = ({product}) => {
         height="100%"
         />
       </div>
-      <div>
+      <div className='product_price_title'>
         <div>
           {`${product.price}Rs`}
         </div>
