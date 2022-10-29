@@ -24,8 +24,9 @@ const AddToCartFailure=()=>{
 
 export const AddToCart=(payload)=>(dispatch)=>{
 dispatch(AddToCartRequest());
-axios.post("http://localhost:8081/cart",payload)
+axios.get("http://localhost:8081/cart")
 .then((r)=>
+// console.log("r",r)
 dispatch(AddToCartSuccess(r.data))
 )
 .catch((e)=>dispatch(AddToCartFailure(e.data)))

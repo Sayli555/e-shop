@@ -1,0 +1,40 @@
+.cart-main-div{
+    width:75%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: auto;
+    display: flex;
+    gap: 1%;
+}
+.cart-products{
+    width:68%;
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+.cart-total-price-div{
+    width:31%;
+    /* border: 1px solid black; */
+    height: auto;
+}
+.cart-total-price-div{
+    padding: 10px;
+
+}
+.cart-total-price >div{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-total-price{
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.cart-total-price >div button{
+   color: white;
+    background-color: green;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+
+}

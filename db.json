@@ -1004,36 +1004,7 @@
       "price": 2500,
       "createdAt": "2022-05-04T06:03:52.492Z",
       "updatedAt": "2022-05-04T06:03:52.492Z"
-    },
-    {
-      "id": "627217ca0b3db42170ba0413",
-      "Name": "M&M's Women's Mars Candy Chocolate M and M Spiral Tie-Dye Girls T-Shirt",
-      "brand": "Seven Times Six",
-      "imageurl": "https://img.shop.com/Image/250000/254500/254570/products/1896906353.jpg?size=400x400",
-      "typeofproduct": "women's tshirt",
-      "price": 3500,
-      "createdAt": "2022-05-04T06:06:02.861Z",
-      "updatedAt": "2022-05-04T06:06:02.861Z"
-    },
-    {
-      "id": "62721f110b3db42170ba0416",
-      "Name": "ALFANI Womens Pink Sheer 3/4 Sleeve V Neck Tunic",
-      "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/278100/278132/products/1920881474.jpg?size=400x400",
-      "typeofproduct": "women's neck Tunic",
-      "price": 3500,
-      "createdAt": "2022-05-04T06:37:05.540Z",
-      "updatedAt": "2022-05-04T06:37:05.540Z"
-    },
-    {
-      "id": "627220450b3db42170ba0420",
-      "Name": "RALPH LAUREN Womens Silver Sleeveless Asymmetrical Neckline Maxi Sheath Evening Dress",
-      "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/278100/278132/products/1920679578.jpg?size=400x400",
-      "typeofproduct": "women's evening Dress",
-      "price": 3500,
-      "createdAt": "2022-05-04T06:42:13.246Z",
-      "updatedAt": "2022-05-04T06:42:13.246Z"
     }
+   
   ]
 }
