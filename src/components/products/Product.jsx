@@ -1,9 +1,25 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { AddToCart } from '../../redux/cart/action';
+
 import "./product.css";
 
-const Product = ({product}) => {
+const Product = ({product,productCategory}) => {
+  // console.log(product.id,productCategory)
+const dispatch=useDispatch()
+
+
+  const addToCart=()=>{
+   const payload={...product}
+    dispatch(AddToCart(payload))
+  }
+
+  
+
   return (
     <div className='product'>
+     <Link to={`/${productCategory}/${product.id}`}>
       <div className='product_img'>
         <img
         src={product.imageurl}
@@ -19,7 +35,8 @@ const Product = ({product}) => {
         {product.Name}
         </div>
       </div>
-      <button>Add To Cart</button>
+      </Link>
+      <button onClick={addToCart} >Add To Cart</button>
     </div>
   )
 }

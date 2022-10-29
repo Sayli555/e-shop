@@ -32,7 +32,7 @@ const Women = () => {
         <Filter_Categories category="women" />
       </div>
       <div className='products'>
-        <Products products={womens}/>
+        <Products productCategory="womens" products={womens}/>
       </div>
     </div>
   )

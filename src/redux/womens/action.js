@@ -30,3 +30,46 @@ dispatch(womensProductFetchSuccess(r.data))
 )
 .catch((e)=>dispatch(womensProductFetchFailure(e.data)))
 }
+
+
+
+// **********************************SINGLE PRODUCT FETCH*******************************************************
+
+
+const womensSingleProductRequest=()=>{
+    return {
+        type:types.WOMENS_SINGLE_PRODUCT_REQUEST,
+    }
+}
+
+const womensSingleProductSuccess=(payload)=>{
+    return {
+        type:types.WOMENS_SINGLE_PRODUCT_SUCCESS,
+        payload
+    }
+}
+
+const womensSingleProductFailure=()=>{
+    return {
+        type:types.WOMENS_SINGLE_PRODUCT_FAILURE,
+    }
+}
+
+
+export const womensSingleDataGet=(payload)=>(dispatch)=>{
+dispatch(womensSingleProductRequest());
+axios.get(`http://localhost:8081/womens/${payload}`)
+.then((r)=>
+// console.log("r",r.data)
+dispatch(womensSingleProductSuccess(r.data))
+)
+.catch((e)=>dispatch(womensSingleProductFailure(e.data)))
+}
+
+
+
+
+
+
+
+
