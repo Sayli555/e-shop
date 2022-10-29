@@ -41,14 +41,15 @@ export const womensReducer=(state=init,{type,payload})=>{
 
         // ***********************************************singleProduct**********************************************
       
-        case types.WOMENS_PRODUCT_FETCH_REQUEST :{
+        case types.WOMENS_SINGLE_PRODUCT_REQUEST :{
             return {
                 ...state,
                 isLoading:true,
                 error:false
             }
         }
-        case types.WOMENS_PRODUCT_FETCH_SUCCESS :{
+        case types.WOMENS_SINGLE_PRODUCT_SUCCESS:{
+            
             return {
                 ...state,
                 singleProduct:payload,
@@ -56,7 +57,7 @@ export const womensReducer=(state=init,{type,payload})=>{
                 error:false
             }
         }
-        case types.WOMENS_PRODUCT_FETCH_REQUEST :{
+        case types.WOMENS_SINGLE_PRODUCT_FAILURE :{
             return {
                 ...state,
                 isLoading:false,

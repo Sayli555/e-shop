@@ -38,3 +38,96 @@ border: none;
 .product_price_title{
     height: 80px;
 }
+
+
+/* *********************************single ********************************************** */
+.single-products-main-div{
+    display: flex;
+    height: 400px;
+    gap: 1%;
+    width:75%;
+    margin: auto;
+}
+
+.single-product-img{
+    width:45%;
+    height: 400px;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.single-product-info{
+    width:63%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.single-product-info h1,h2 {
+    color: darkgreen;
+}
+
+.single-product-info p{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+.single-plus-min {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.single-plus-min button{
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.single-plus-min span {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding-right: 15px;
+    padding-left:15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* .single-remove-button{
+    font-size: 15px;
+    padding: 7px 15px;
+    background-color: white;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid brown;
+    
+}
+
+.single-remove-button:hover{
+    background-color: brown;
+    color: white;
+} */
+
+.cartaddicon{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+.single-product-button{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.single-remove-add-cart{
+    font-size: 15px;
+    padding: 7px 15px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  
+    margin-right: 40%;
+    border: none;
+}
+.single-remove-add-cart:hover{
+    border: 2px solid green;
+    color: green;
+    background-color: white;
+}

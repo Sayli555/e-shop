@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./cart.css";
 import {AiTwotoneDelete,AiOutlinePlus,AiOutlineMinus} from "react-icons/ai"
 
 const CartS = ({cartpr}) => {
-   console.log("cartpr",cartpr)
-  cartpr.map((e)=>{
-    console.log("e",e)
-  })
+   
+ const [quantity,setQuantity]=useState(1);
 
+
+ const quantityadding=(val)=>{
+    setQuantity(quantity+val)
+ }
+ console.log(quantity)
   return (
     <>
     {cartpr.map((cartpr)=>(
@@ -26,11 +29,11 @@ const CartS = ({cartpr}) => {
         <h3>{cartpr.price}</h3>
 
     <div className='cart-plus-min'>
-  <button>
+  <button onClick={()=>quantityadding(-1)}>
     <AiOutlineMinus/>
   </button>
-  <span>5</span>
-  <button>
+  <span>{quantity}</span>
+  <button onClick={()=>quantityadding(1)}>
     <AiOutlinePlus/>
   </button>
 </div>
