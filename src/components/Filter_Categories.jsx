@@ -2,15 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { mensDataGet } from '../redux/mens/action';
+import { womensDataGet } from '../redux/womens/action';
 import "./filter_sort.css"
 
-const Filter_Categories = () => {
+const Filter_Categories = ({category}) => {
       const dispatch=useDispatch()
       const [brand,setBrands]=useState([]);
       const [searchParams, setSearchParams] = useSearchParams();
       const [sort,setsort]=useState();
-      
-   
+      let BrandFilterBy;
+   if(category=="men"){
+       BrandFilterBy=["BOBBI","BHFO","Merch","Seven Times Six","Pertemba US","Authentic Designer Fashion","Macy's"]
+   }
+   else if(category=="women"){
+       BrandFilterBy=["BOBBI","BHFO","Merch","NotJustLeggings","Seven Times Six","Pertemba US","Authentic Designer Fashion","Macy's"]
+
+   }
+
+
+
+
+
     const handlechange=(e)=>{
             let option=e.target.value;
             let newBrandsSets=[...brand];
@@ -23,9 +35,17 @@ const Filter_Categories = () => {
             }
             setBrands(newBrandsSets)
     }
+
+
     useEffect(()=>{
       setSearchParams({brand:brand});
-      dispatch(mensDataGet({params:{brand}}))
+      if(category=="women"){
+            dispatch(womensDataGet({params:{brand}}))
+      }
+      else if(category=="men"){
+            dispatch(mensDataGet({params:{brand}}))
+      }
+   
     },[brand,searchParams])
 
 // *********************************sort by ********************************
@@ -54,7 +74,14 @@ const handlesortby=(e)=>{
           }
          
         }
-        dispatch(mensDataGet(getParamsForSort))
+
+        if(category=="women"){
+            dispatch(womensDataGet(getParamsForSort))
+      }
+      else if(category=="men"){
+            dispatch(mensDataGet(getParamsForSort))
+      }
+        
       }
     },[sort,searchParams,dispatch,setSearchParams])
   
@@ -65,10 +92,28 @@ console.log("brands",brand);
 // 
 // *******************************filter array******************************************
 
+
+
+
   return (
     <div className='filter_sort_div'>
       <h2>Filter By Brands</h2>
-      <div>
+
+      {BrandFilterBy.map((brand)=>(
+            <div>
+            <input 
+            type="checkbox"
+            onChange={handlechange}
+            value={brand}
+            />
+            <lable>{brand}</lable>
+      </div>
+      ))}
+
+
+
+
+      {/* <div>
             <input 
             type="checkbox"
             onChange={handlechange}
@@ -124,7 +169,7 @@ console.log("brands",brand);
             value="Authentic Designer Fashion"
             />
             <lable>Authentic Designer Fashion</lable>
-      </div>
+      </div> */}
       <div>
             <h2>Sort</h2>
             <div >

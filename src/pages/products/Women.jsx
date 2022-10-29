@@ -5,34 +5,37 @@ import Filter_Categories from '../../components/Filter_Categories';
 import Product from '../../components/products/Product';
 import Products from '../../components/products/Products';
 import { mensDataGet } from '../../redux/mens/action';
+import { womensDataGet } from '../../redux/womens/action';
 import "./mens.css"
 
-const Mens = () => {
+
+const Women = () => {
     const [searchParams]=useSearchParams()
-    const mens=useSelector((state)=>state.mensReducer.mens);
+    const womens=useSelector((state)=>state.womensReducer.womens);
     const dispatch=useDispatch();
 
     useEffect(()=>{
+        dispatch(womensDataGet())
 
       const brand=searchParams.getAll("brand");
       const sortUrl=searchParams.get("sort");
 
-        if(mens.length!==0 && (!brand || !sortUrl)){
-            dispatch(mensDataGet())
+        if(womens.length!==0 && (!brand || !sortUrl)){
+            dispatch(womensDataGet())
         }
     },[])
-    console.log(mens)
+   
 
   return (
     <div className='mens'>
       <div className='filter_category'>
-        <Filter_Categories category="men" />
+        <Filter_Categories category="women" />
       </div>
       <div className='products'>
-        <Products mens={mens}/>
+        <Products products={womens}/>
       </div>
     </div>
   )
 }
 
-export default Mens
+export default Women
