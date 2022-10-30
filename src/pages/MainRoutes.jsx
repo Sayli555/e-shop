@@ -7,6 +7,8 @@ import Home from './Home'
 import Accesories from './products/Accesories'
 import Mens from './products/Mens'
 import Women from './products/Women'
+import Login from './registelogin/Login'
+import Register from './registelogin/Register'
 
 const MainRoutes = () => {
   return (
@@ -20,6 +22,8 @@ const MainRoutes = () => {
         <Route path="/checkout" element={<Checkout/>} />
         <Route path="/accessories" element={<Accesories/>} />
         <Route path="/accessories/:id" element={<SingleProduct/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/login" element={<Login/>} />
 
         <Route path="/womens/:id" element={<SingleProduct/>} />
       </Routes>

@@ -1,0 +1,15 @@
+.typerighte{
+    
+        font-family: sans-serif;
+        font-weight:800;
+        font-size:40px;
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding: 10px;
+        
+        background:white;
+        color: orange;
+    
+}

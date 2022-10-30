@@ -15,16 +15,16 @@ const Accesories = () => {
       const brand=searchParams.getAll("brand");
       const sortUrl=searchParams.get("sort");
 
-       // if(mens.length!==0 && (!brand || !sortUrl)){
+       if(accessories.length!==0 && (!brand || !sortUrl)){
             dispatch(accessoriesDataGet())
-     //   }
+       }
     },[])
     // console.log(mens)
 
   return (
     <div className='mens'>
       <div className='filter_category'>
-        <Filter_Categories category="mens" />
+        <Filter_Categories category="accessories" />
       </div>
       <div className='products'>
         <Products productCategory="accessories" products={accessories}/>

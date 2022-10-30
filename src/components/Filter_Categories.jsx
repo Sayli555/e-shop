@@ -87,6 +87,9 @@ const handlesortby=(e)=>{
       else if(category=="mens"){
             dispatch(mensDataGet(getParamsForSort))
       }
+      else if(category=="accessories"){
+            dispatch(accessoriesDataGet(getParamsForSort))
+      }
         
       }
     },[sort,searchParams,dispatch,setSearchParams])
