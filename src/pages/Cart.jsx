@@ -8,9 +8,7 @@ import "./cart.css"
 const Cart = () => {
     const dispatch=useDispatch()
     const cartProducts=useSelector((state)=>state.cartReducer.cart);
-  //   const TotalPrice=useSelector((state)=>state.cartReducer.TotalPrice)
-  //  console.log(TotalPrice)
-
+    const TotalPrice=useSelector((state)=>state.cartReducer.TotalPrice);
     useEffect(()=>{
         dispatch(AddToCart())
     },[])
@@ -35,16 +33,16 @@ const Cart = () => {
          <h2>The Total Amount Of</h2>
            <div >
             <h4>Product Amount</h4>
-            <h4>5000</h4>
+            <h4>Rs{" "}{TotalPrice}/-</h4>
            </div>
            <div >
             <h4>Shipping Charge</h4>
-            <h4>5000</h4>
+            <h4>Rs{" "}500/-</h4>
            </div>
            <hr/>
            <div >
             <h4>Total Amount</h4>
-            <h4>5000</h4>
+            <h4>Rs{" "}{TotalPrice+500}/-</h4>
            </div>
            <div>
             <button>Checkout</button>

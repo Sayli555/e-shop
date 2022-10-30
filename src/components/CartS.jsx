@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./cart.css";
 import {AiTwotoneDelete,AiOutlinePlus,AiOutlineMinus} from "react-icons/ai"
+import { useDispatch } from 'react-redux';
+import { AddToCart, removeCart } from '../redux/cart/action';
 
 const CartS = ({cartpr}) => {
-   
+   const dispatch=useDispatch()
  const [quantity,setQuantity]=useState(1);
+ const [removeupdate,setRemoveUpdate]=useState(false)
 
-console.log("cartPR",cartpr)
+// console.log("cartPR",cartpr)
  const quantityadding=(val)=>{
     setQuantity(quantity+val)
  }
 //  console.log(quantity)
+
+
+const removeCartItem=(id)=>{
+  dispatch(removeCart(id));
+ setRemoveUpdate(!removeupdate)
+  
+}
+
+useEffect(()=>{
+  dispatch(AddToCart())
+},[removeupdate])
+
+
+
   return (
     <>
     {/* {cartpr.map((cartpr)=>( */}
@@ -33,7 +50,7 @@ console.log("cartPR",cartpr)
           <h4>Total Price {" Rs "}{cartpr.quantity*cartpr.price}/-</h4>
         </div>
 
-<button className='remove-button'>
+<button className='remove-button' onClick={()=>removeCartItem(cartpr.id)} >
 
   Remove 
 </button>

@@ -65,3 +65,37 @@ dispatch(AddProductInCartSuccess(r.data))
 )
 .catch((e)=>dispatch(AddProductInCartFailure(e.data)))
 }
+
+
+// *********************************************** REMOVE PRODUCT **************************************************
+
+
+const removeCartRequest=()=>{
+    return {
+        type:types.REMOVE_PRODUCT_IN_CART_REQUEST,
+    }
+}
+
+const removeCartSuccess=(payload)=>{
+    return {
+        type:types.REMOVE_PRODUCT_IN_CART_SUCCESS,
+        payload
+    }
+}
+
+const removeCartFailure=()=>{
+    return {
+        type:types.REMOVE_PRODUCT_IN_CART_FAILURE,
+    }
+}
+
+
+export const removeCart=(payload)=>(dispatch)=>{
+dispatch(removeCartRequest());
+axios.delete(`http://localhost:8081/cart/${payload}`)
+.then((r)=>
+// console.log("r",r)
+dispatch(removeCartSuccess(r.data))
+)
+.catch((e)=>dispatch(removeCartFailure(e.data)))
+}

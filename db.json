@@ -986,28 +986,16 @@
   ],
   "cart": [
     {
-      "id": "1",
-      "Name": "ADRIANNA PAPELL Womens Black Sheer Short Sleeve Illusion Neckline Party T-Shirt",
-      "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/278100/278132/products/1921266473.jpg?size=400x400",
+      "id": "62721f440b3db42170ba0418",
+      "Name": "Mickey Mouse Gold Foil Ladies Black Tee Shirt",
+      "brand": "Merch",
+      "imageurl": "https://img.shop.com/Image/260000/269300/269358/products/1653885471.jpg?size=400x400",
       "typeofproduct": "women's tshirt",
       "price": 1500,
-      "createdAt": "2022-05-04T06:02:56.417Z",
-      "updatedAt": "2022-05-04T06:02:56.417Z",
-      "totalPrice": 3000,
-      "quantity": 2
-    },
-    {
-      "id": "2",
-      "Name": "ADRIANNA PAPELL Womens Black Sheer Short Sleeve Illusion Neckline Party T-Shirt",
-      "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/278100/278132/products/1921266473.jpg?size=400x400",
-      "typeofproduct": "women's tshirt",
-      "price": 1500,
-      "createdAt": "2022-05-04T06:02:56.417Z",
-      "updatedAt": "2022-05-04T06:02:56.417Z",
-      "totalPrice": 3000,
-      "quantity": 2
+      "createdAt": "2022-05-04T06:37:56.452Z",
+      "updatedAt": "2022-05-04T06:37:56.452Z",
+      "totalPrice": 1500,
+      "quantity": 1
     }
   ]
 }

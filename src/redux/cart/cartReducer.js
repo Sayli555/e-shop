@@ -21,10 +21,15 @@ export const cartReducer=(state=init,{type,payload})=>{
             }
         }
         case types.ADD_CART_SUCCESS :{
+            let sum=0;
+            for(var i=0;i<payload.length;i++){
+                sum+=(payload[i].totalPrice)
+            }
+           
             return {
                 ...state,
-                cart:                
-                    payload    ,             
+                cart:payload,    
+                TotalPrice:sum,        
                 isLoading:false,
                 error:false
             }
@@ -48,8 +53,7 @@ export const cartReducer=(state=init,{type,payload})=>{
             }
         }
         case types.ADD_PRODUCT_IN_CART_SUCCESS :{
-           const {quantity,totalPrice}=payload;
-           const Tprice=state.TotalPrice +totalPrice
+         
            
            
         //    console.log("check",Tprice,state.TotalPrice)
@@ -59,8 +63,7 @@ export const cartReducer=(state=init,{type,payload})=>{
                     ...state.cart,
                     payload
                 ],  
-                TotalPrice:Tprice,
-                TotalCartItem:quantity,
+                
                 isLoading:false,
                 error:false
             }
