@@ -16,3 +16,7 @@
     width:20%;
     justify-content: space-between;
 }
+Link{
+    text-decoration: none;
+    color: black;
+  }

@@ -24,9 +24,12 @@
 
 .products{
     width:74%;
-    height: 1000px;
-    overflow: scroll;
+   
 
     /* border: 1px solid black; */
    
 }
+Link{
+    text-decoration: none;
+    color: black;
+  }

@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import Filter_Categories from '../../components/Filter_Categories';
 import Product from '../../components/products/Product';
 import Products from '../../components/products/Products';
+import TextTypewriter from '../../components/TextTypewriter';
 import { allDataGet } from '../../redux/allProducts/action';
 import { mensDataGet } from '../../redux/mens/action';
 import "./mens.css"
@@ -31,6 +32,7 @@ const AllProduct = () => {
         <Filter_Categories category="all" />
       </div>
       <div className='products'>
+      <TextTypewriter first="Welcome To" second="All Products" />
         <Products productCategory="all" products={AllProduct}/>
       </div>
     </div>

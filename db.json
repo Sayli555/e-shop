@@ -984,7 +984,7 @@
       "price": "6000"
     }
   ],
-  "all":[
+  "all": [
     {
       "id": "62720de20b3db42170ba03e6",
       "Name": "BARBOUR Mens Green Plaid Button Down Casual Shirt",
@@ -1588,16 +1588,16 @@
   ],
   "cart": [
     {
-      "id": "627217480b3db42170ba0411",
-      "Name": "Adrianna Papell Womens Crop Square Neck Tank Top",
+      "id": "62720f880b3db42170ba03ee",
+      "Name": "HUGO BOSS Mens Black Lined Single Breasted Extra Slim Fit Suit Separate",
       "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/273200/273200/products/1930607796.jpg?size=400x400",
-      "typeofproduct": "women's tank top",
-      "price": 2500,
-      "createdAt": "2022-05-04T06:03:52.492Z",
-      "updatedAt": "2022-05-04T06:03:52.492Z",
-      "totalPrice": 2500,
-      "quantity": 1
+      "imageurl": "https://img.shop.com/Image/270000/278100/278132/products/1921790259.jpg?size=400x400",
+      "typeofproduct": "Men's Slim Fit suit",
+      "price": 8000,
+      "createdAt": "2022-05-04T05:30:48.735Z",
+      "updatedAt": "2022-05-04T05:30:48.735Z",
+      "totalPrice": 16000,
+      "quantity": 2
     }
   ]
 }

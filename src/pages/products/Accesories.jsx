@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import Filter_Categories from '../../components/Filter_Categories';
 import Products from '../../components/products/Products';
+import TextTypewriter from '../../components/TextTypewriter';
 import { accessoriesDataGet } from '../../redux/accessories/action';
 
 const Accesories = () => {
@@ -27,6 +28,7 @@ const Accesories = () => {
         <Filter_Categories category="accessories" />
       </div>
       <div className='products'>
+      <TextTypewriter first="Welcome To" second="Accessories" />
         <Products productCategory="accessories" products={accessories}/>
       </div>
     </div>

@@ -4,6 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import Filter_Categories from '../../components/Filter_Categories';
 import Product from '../../components/products/Product';
 import Products from '../../components/products/Products';
+import TextTypewriter from '../../components/TextTypewriter';
 import { mensDataGet } from '../../redux/mens/action';
 import "./mens.css"
 
@@ -29,6 +30,7 @@ const Mens = () => {
         <Filter_Categories category="mens" />
       </div>
       <div className='products'>
+      <TextTypewriter first="Welcome To" second="Men's" />
         <Products productCategory="mens" products={mens}/>
       </div>
     </div>
