@@ -2,20 +2,44 @@ import React, { useEffect, useState } from 'react';
 import "./product.css";
 import {AiTwotoneDelete,AiOutlinePlus,AiOutlineMinus} from "react-icons/ai"
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { womensSingleDataGet } from '../../redux/womens/action';
 import { AddProductInCart, AddToCart } from '../../redux/cart/action';
+import { mensSingleDataGet } from '../../redux/mens/action';
 
 const SingleProduct = () => {
 
   const dispatch=useDispatch();
-  const {id}=useParams()
+  const {id}=useParams();
+  const location=useLocation();
+  const { from } = location.state
+  // console.log(from)
 
-  const single=useSelector((state)=>state.womensReducer.singleProduct);
-  // console.log(id,single)
+  // const single=useSelector((state)=>state.mensReducer.singleProduct)
+  
+  const single=useSelector((state)=>{
+    if(from=="mens"){
+     return state.mensReducer.singleProduct
+    }
+    else if(from =="womens"){
+      return state.womensReducer.singleProduct
+    }
+  }
+  );
+  
+  console.log("single",single)
 
   useEffect(()=>{
-    dispatch(womensSingleDataGet(id))
+
+
+    // dispatch(mensSingleDataGet(id))
+    if(from=="mens"){
+      dispatch(mensSingleDataGet(id))
+    }
+    else if(from=="womens"){
+      dispatch(womensSingleDataGet(id))
+    }
+    
   },[id])
 
 

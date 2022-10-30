@@ -26,7 +26,43 @@ dispatch(mensProductFetchRequest());
 axios.get("http://localhost:8081/mens",params)
 .then((r)=>
 
+// console.log("r",r)
 dispatch(mensProductFetchSuccess(r.data))
 )
 .catch((e)=>dispatch(mensProductFetchFailure(e.data)))
 }
+
+
+// **************************************************mens single product ***********************************************
+
+
+const mensSingleProductRequest=()=>{
+    return {
+        type:types.MENS_SINGLE_PRODUCT_REQUEST,
+    }
+}
+
+const mensSingleProductSuccess=(payload)=>{
+    return {
+        type:types.MENS_SINGLE_PRODUCT_SUCCESS,
+        payload
+    }
+}
+
+const mensSingleProductFailure=()=>{
+    return {
+        type:types.MENS_SINGLE_PRODUCT_FAILURE,
+    }
+}
+
+
+export const mensSingleDataGet=(payload)=>(dispatch)=>{
+dispatch(mensSingleProductRequest());
+axios.get(`http://localhost:8081/mens/${payload}`)
+.then((r)=>
+// console.log("r",r.data)
+dispatch(mensSingleProductSuccess(r.data))
+)
+.catch((e)=>dispatch(mensSingleProductFailure(e.data)))
+}
+

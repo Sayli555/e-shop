@@ -19,7 +19,7 @@ const dispatch=useDispatch()
 
   return (
     <div className='product'>
-     <Link to={`/${productCategory}/${product.id}`}>
+     <Link to={`/${productCategory}/${product.id}`} state={{ from: productCategory }} >
       <div className='product_img'>
         <img
         src={product.imageurl}

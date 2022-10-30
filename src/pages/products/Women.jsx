@@ -29,7 +29,7 @@ const Women = () => {
   return (
     <div className='mens'>
       <div className='filter_category'>
-        <Filter_Categories category="women" />
+        <Filter_Categories category="womens" />
       </div>
       <div className='products'>
         <Products productCategory="womens" products={womens}/>

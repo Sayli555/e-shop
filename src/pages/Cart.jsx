@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import CartS from '../components/CartS';
 import { AddToCart } from '../redux/cart/action';
 
@@ -9,10 +10,22 @@ const Cart = () => {
     const dispatch=useDispatch()
     const cartProducts=useSelector((state)=>state.cartReducer.cart);
     const TotalPrice=useSelector((state)=>state.cartReducer.TotalPrice);
+    const navigate=useNavigate()
     useEffect(()=>{
         dispatch(AddToCart())
     },[])
     
+
+    const checkout=()=>{
+      navigate("/checkout")
+    }
+
+
+    const continueShopping=()=>{
+      navigate("/")
+    }
+
+
   return (
     <div className='cart-main-div'>
       <div className='cart-products'>
@@ -45,8 +58,8 @@ const Cart = () => {
             <h4>Rs{" "}{TotalPrice+500}/-</h4>
            </div>
            <div>
-            <button>Checkout</button>
-            <button>Continue Shopping</button>
+            <button onClick={checkout} >Checkout</button>
+            <button onClick={continueShopping}>Continue Shopping</button>
            </div>
          </div>
           

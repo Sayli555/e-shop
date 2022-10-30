@@ -11,10 +11,10 @@ const Filter_Categories = ({category}) => {
       const [searchParams, setSearchParams] = useSearchParams();
       const [sort,setsort]=useState();
       let BrandFilterBy;
-   if(category=="men"){
+   if(category=="mens"){
        BrandFilterBy=["BOBBI","BHFO","Merch","Seven Times Six","Pertemba US","Authentic Designer Fashion","Macy's"]
    }
-   else if(category=="women"){
+   else if(category=="womens"){
        BrandFilterBy=["BOBBI","BHFO","Merch","NotJustLeggings","Seven Times Six","Pertemba US","Authentic Designer Fashion","Macy's"]
 
    }
@@ -39,10 +39,10 @@ const Filter_Categories = ({category}) => {
 
     useEffect(()=>{
       setSearchParams({brand:brand});
-      if(category=="women"){
+      if(category=="womens"){
             dispatch(womensDataGet({params:{brand}}))
       }
-      else if(category=="men"){
+      else if(category=="mens"){
             dispatch(mensDataGet({params:{brand}}))
       }
    
@@ -75,10 +75,10 @@ const handlesortby=(e)=>{
          
         }
 
-        if(category=="women"){
+        if(category=="womens"){
             dispatch(womensDataGet(getParamsForSort))
       }
-      else if(category=="men"){
+      else if(category=="mens"){
             dispatch(mensDataGet(getParamsForSort))
       }
         
