@@ -7,6 +7,7 @@ import { womensSingleDataGet } from '../../redux/womens/action';
 import { AddProductInCart, AddToCart } from '../../redux/cart/action';
 import { mensSingleDataGet } from '../../redux/mens/action';
 import { accessoriesSingleDataGet } from '../../redux/accessories/action';
+import { allSingleDataGet } from '../../redux/allProducts/action';
 
 const SingleProduct = () => {
 
@@ -28,6 +29,9 @@ const SingleProduct = () => {
     else if(from=="accessories"){
       return state.accessoriesReducer.singleProduct
     }
+    else if(from=="all"){
+      return state.allReducer.singleProduct
+    }
   }
   );
   
@@ -45,6 +49,9 @@ const SingleProduct = () => {
     }
     else if(from=="accessories"){
       dispatch(accessoriesSingleDataGet(id))
+    }
+    else if(from=="all"){
+      dispatch(allSingleDataGet(id))
     }
     
   },[id])

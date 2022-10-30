@@ -16,6 +16,10 @@ const TextTypewriter = ({first,second}) => {
   .pauseFor(1000)
   .deleteAll()
   .typeString(second)
+  
+    
+  
+  
   .start();
   }}
   />

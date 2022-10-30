@@ -1,6 +1,7 @@
 import React from 'react';
 import TextTypewriter from '../components/TextTypewriter';
 import "./home.css"
+import AllProduct from './products/AllProduct';
 
 const Home = () => {
   return (
@@ -15,8 +16,8 @@ const Home = () => {
         height="100%"
         />
       </div>
-      <div>
-        
+      <div className='home-all-products'>
+        <AllProduct/>
       </div>
     </div>
   )

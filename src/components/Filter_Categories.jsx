@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
 import { accessoriesDataGet } from '../redux/accessories/action';
+import { allDataGet } from '../redux/allProducts/action';
 import { mensDataGet } from '../redux/mens/action';
 import { womensDataGet } from '../redux/womens/action';
 import "./filter_sort.css"
@@ -21,6 +22,9 @@ const Filter_Categories = ({category}) => {
    }
    else if(category=="accessories"){
       BrandFilterBy=["LUX LAIR","Belt Outlet","Virtual Exchanges","Belt Outlet","UnbeatableSale","Pertemba US","BOBBI","MKF Collection","NotJustLeggings"]
+   }
+   else if(category=="all"){
+      BrandFilterBy=["BOBBI","BHFO","Merch","Seven Times Six","Pertemba US","Authentic Designer Fashion","Macy's","NotJustLeggings","LUX LAIR","Belt Outlet","Virtual Exchanges","Belt Outlet"]
    }
 
 
@@ -50,6 +54,9 @@ const Filter_Categories = ({category}) => {
       }
       else if(category=="accessories"){
             dispatch(accessoriesDataGet({params:{brand}}))
+      }
+      else if(category=="all"){
+            dispatch(allDataGet({params:{brand}}))
       }
    
     },[brand,searchParams])
@@ -89,6 +96,9 @@ const handlesortby=(e)=>{
       }
       else if(category=="accessories"){
             dispatch(accessoriesDataGet(getParamsForSort))
+      }
+      else if(category=="all"){
+            dispatch(allDataGet(getParamsForSort))
       }
         
       }
