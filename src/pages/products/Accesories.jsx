@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Filter_Categories from '../../components/Filter_Categories';
 import Products from '../../components/products/Products';
 import TextTypewriter from '../../components/TextTypewriter';
 import { accessoriesDataGet } from '../../redux/accessories/action';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Accesories = () => {
     const [searchParams]=useSearchParams()
@@ -23,6 +25,7 @@ const Accesories = () => {
     // console.log(mens)
 
   return (
+    <>
     <div className='mens'>
       <div className='filter_category'>
         <Filter_Categories category="accessories" />
@@ -32,6 +35,8 @@ const Accesories = () => {
         <Products productCategory="accessories" products={accessories}/>
       </div>
     </div>
+    <ToastContainer />
+    </>
   )
 }
 

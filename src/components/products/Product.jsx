@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import { AddToCart } from '../../redux/cart/action';
 
 import "./product.css";
@@ -11,9 +12,17 @@ const dispatch=useDispatch()
 
 
   const addToCart=()=>{
+
+    // toast("Product Add In Cart");
+    toast.success('Product Add In Cart', {
+      position: toast.POSITION.TOP_RIGHT
+  });
    const payload={...product}
     dispatch(AddToCart(payload))
+
   }
+
+
 
   
 
@@ -37,6 +46,7 @@ const dispatch=useDispatch()
       </div>
       </Link>
       <button onClick={addToCart} >Add To Cart</button>
+      
     </div>
   )
 }

@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useSearchParams } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Filter_Categories from '../../components/Filter_Categories';
 import Product from '../../components/products/Product';
 import Products from '../../components/products/Products';
 import TextTypewriter from '../../components/TextTypewriter';
 import { mensDataGet } from '../../redux/mens/action';
 import { womensDataGet } from '../../redux/womens/action';
-import "./mens.css"
+import "./mens.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Women = () => {
@@ -28,6 +30,7 @@ const Women = () => {
    
 
   return (
+    <>
     <div className='mens'>
       <div className='filter_category'>
         <Filter_Categories category="womens" />
@@ -37,6 +40,8 @@ const Women = () => {
         <Products productCategory="womens" products={womens}/>
       </div>
     </div>
+    <ToastContainer />
+    </>
   )
 }
 
