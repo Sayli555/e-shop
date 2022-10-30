@@ -4,7 +4,7 @@ import {AiTwotoneDelete,AiOutlinePlus,AiOutlineMinus} from "react-icons/ai"
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { womensSingleDataGet } from '../../redux/womens/action';
-import { AddToCart } from '../../redux/cart/action';
+import { AddProductInCart, AddToCart } from '../../redux/cart/action';
 
 const SingleProduct = () => {
 
@@ -12,7 +12,7 @@ const SingleProduct = () => {
   const {id}=useParams()
 
   const single=useSelector((state)=>state.womensReducer.singleProduct);
-  console.log(id,single)
+  // console.log(id,single)
 
   useEffect(()=>{
     dispatch(womensSingleDataGet(id))
@@ -20,9 +20,15 @@ const SingleProduct = () => {
 
 
 
-  const AddToCart=(payload)=>{
-    dispatch(AddToCart(payload))
-    console.log("..payload",payload)
+  const AddToCart=()=>{
+    let totalPrice=quantity*single.price
+    const payload={
+      ...single,
+      totalPrice,
+      quantity
+    }
+    dispatch(AddProductInCart(payload))
+    // console.log("..payload",payload)
   }
 
    
@@ -32,7 +38,7 @@ const SingleProduct = () => {
  const quantityadding=(val)=>{
     setQuantity(quantity+val)
  }
- console.log(quantity)
+//  console.log(quantity)
   return (
    
     
@@ -61,9 +67,9 @@ const SingleProduct = () => {
 </div>
 <div className='single-product-button'>
 <button className='single-remove-add-cart' 
-onClick={()=>{
-  AddToCart(single)
-}}
+onClick={
+  AddToCart
+}
 >
 
 Add To Cart

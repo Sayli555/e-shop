@@ -21,7 +21,7 @@ const Mens = () => {
             dispatch(mensDataGet())
         }
     },[])
-    console.log(mens)
+    // console.log(mens)
 
   return (
     <div className='mens'>

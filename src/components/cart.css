@@ -23,9 +23,7 @@
     padding-bottom: 0;
     font-size: 14px;
 }
-.cart-plus-min {
-    margin-bottom: 25px;
-}
+
 .cart-plus-min button{
     background-color: white;
     border: none;
@@ -48,4 +46,10 @@
 .remove-button:hover{
     background-color: brown;
     color: white;
+}
+
+.total-Qauntity-price-div{
+    display: flex;
+    justify-content: space-between;
+    
 }

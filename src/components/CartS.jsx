@@ -6,14 +6,14 @@ const CartS = ({cartpr}) => {
    
  const [quantity,setQuantity]=useState(1);
 
-
+console.log("cartPR",cartpr)
  const quantityadding=(val)=>{
     setQuantity(quantity+val)
  }
- console.log(quantity)
+//  console.log(quantity)
   return (
     <>
-    {cartpr.map((cartpr)=>(
+    {/* {cartpr.map((cartpr)=>( */}
       <div className='cart-products-main-div'>
       <div className='cart-product-img'>
         <img
@@ -26,17 +26,13 @@ const CartS = ({cartpr}) => {
         <h2>{cartpr.brand}{" "} {cartpr.typeofproduct}</h2>
         <p>{cartpr.Name}
         </p>
-        <h3>{cartpr.price}</h3>
+        <h3>Rs {" "}{cartpr.price}/-</h3>
 
-    <div className='cart-plus-min'>
-  <button onClick={()=>quantityadding(-1)}>
-    <AiOutlineMinus/>
-  </button>
-  <span>{quantity}</span>
-  <button onClick={()=>quantityadding(1)}>
-    <AiOutlinePlus/>
-  </button>
-</div>
+        <div className='total-Qauntity-price-div'>
+          <h4>quantity ({cartpr.quantity})</h4>
+          <h4>Total Price {" Rs "}{cartpr.quantity*cartpr.price}/-</h4>
+        </div>
+
 <button className='remove-button'>
 
   Remove 
@@ -44,7 +40,7 @@ const CartS = ({cartpr}) => {
       </div>
       
     </div>
-    ))}
+    {/* ))} */}
    
     </>
   )

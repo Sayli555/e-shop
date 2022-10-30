@@ -7,8 +7,9 @@ import "./cart.css"
 
 const Cart = () => {
     const dispatch=useDispatch()
-    const cartProducts=useSelector((state)=>state.cartReducer.cart)
-   
+    const cartProducts=useSelector((state)=>state.cartReducer.cart);
+  //   const TotalPrice=useSelector((state)=>state.cartReducer.TotalPrice)
+  //  console.log(TotalPrice)
 
     useEffect(()=>{
         dispatch(AddToCart())
