@@ -8,30 +8,30 @@ const Navbar = () => {
   return (
     <div className='navbar'>
     <div>
-    <Link to="/" >HOME</Link>
+    <Link to="/"  className='link'>HOME</Link>
     </div>
 
     <div className='navbar-products'>
     <div>
-    <Link to="/mens" >MENS</Link>
+    <Link to="/mens" className='link'>MENS</Link>
     </div>
     <div>
-    <Link to="/womens" >WOMENS</Link>
+    <Link to="/womens" className='link'>WOMENS</Link>
     </div>
     <div>
-    <Link to="/accessories" >ACCESSORIES</Link>
+    <Link to="/accessories" className='link'>ACCESSORIES</Link>
     </div>
      
     </div>
     <div className='navbar-login-register'>
     <div>
-    <Link to="/login">LOGIN</Link>
+    <Link to="/login" className='link'>LOGIN</Link>
     </div>
     <div>
-      <Link to="/register" >REGISTER</Link>
+      <Link to="/register" className='link'>REGISTER</Link>
     </div>
     <div>
-    <Link to="/cart" >CART</Link>
+    <Link to="/cart" className='link' >CART</Link>
     </div>
    
       
