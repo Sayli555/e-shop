@@ -6,6 +6,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import { womensSingleDataGet } from '../../redux/womens/action';
 import { AddProductInCart, AddToCart } from '../../redux/cart/action';
 import { mensSingleDataGet } from '../../redux/mens/action';
+import { accessoriesSingleDataGet } from '../../redux/accessories/action';
 
 const SingleProduct = () => {
 
@@ -24,6 +25,9 @@ const SingleProduct = () => {
     else if(from =="womens"){
       return state.womensReducer.singleProduct
     }
+    else if(from=="accessories"){
+      return state.accessoriesReducer.singleProduct
+    }
   }
   );
   
@@ -38,6 +42,9 @@ const SingleProduct = () => {
     }
     else if(from=="womens"){
       dispatch(womensSingleDataGet(id))
+    }
+    else if(from=="accessories"){
+      dispatch(accessoriesSingleDataGet(id))
     }
     
   },[id])

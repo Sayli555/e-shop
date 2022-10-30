@@ -4,6 +4,7 @@ import SingleProduct from '../components/products/SingleProduct'
 import Cart from './Cart'
 import Checkout from './Checkout'
 import Home from './Home'
+import Accesories from './products/Accesories'
 import Mens from './products/Mens'
 import Women from './products/Women'
 
@@ -17,6 +18,8 @@ const MainRoutes = () => {
         <Route path="/mens/:id" element={<SingleProduct/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkout" element={<Checkout/>} />
+        <Route path="/accessories" element={<Accesories/>} />
+        <Route path="/accessories/:id" element={<SingleProduct/>} />
 
         <Route path="/womens/:id" element={<SingleProduct/>} />
       </Routes>
