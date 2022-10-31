@@ -24,7 +24,7 @@ const AddToCartFailure=()=>{
 
 export const AddToCart=(payload)=>(dispatch)=>{
 dispatch(AddToCartRequest());
-axios.get("http://localhost:8081/cart")
+axios.get("https://e-shop24.herokuapp.com/api/cart")
 .then((r)=>
 // console.log("r",r)
 dispatch(AddToCartSuccess(r.data))
@@ -58,7 +58,7 @@ const AddProductInCartFailure=()=>{
 
 export const AddProductInCart=(payload)=>(dispatch)=>{
 dispatch(AddProductInCartRequest());
-axios.post("http://localhost:8081/cart",payload)
+axios.post("https://e-shop24.herokuapp.com/api/cart",payload)
 .then((r)=>
 // console.log("r",r)
 dispatch(AddProductInCartSuccess(r.data))
@@ -92,7 +92,7 @@ const removeCartFailure=()=>{
 
 export const removeCart=(payload)=>(dispatch)=>{
 dispatch(removeCartRequest());
-axios.delete(`http://localhost:8081/cart/${payload}`)
+axios.delete(`https://e-shop24.herokuapp.com/api/cart/${payload}`)
 .then((r)=>
 // console.log("r",r)
 dispatch(removeCartSuccess(r.data))

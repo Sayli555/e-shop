@@ -23,7 +23,7 @@ const womensProductFetchFailure=()=>{
 
 export const womensDataGet=(params)=>(dispatch)=>{
 dispatch(womensProductFetchRequest());
-axios.get("http://localhost:8081/womens",params)
+axios.get("https://e-shop24.herokuapp.com/api/womens",params)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(womensProductFetchSuccess(r.data))
@@ -58,7 +58,7 @@ const womensSingleProductFailure=()=>{
 
 export const womensSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(womensSingleProductRequest());
-axios.get(`http://localhost:8081/womens/${payload}`)
+axios.get(`https://e-shop24.herokuapp.com/api/womens/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(womensSingleProductSuccess(r.data))

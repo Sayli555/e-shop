@@ -23,7 +23,7 @@ const allProductFetchFailure=()=>{
 
 export const allDataGet=(params)=>(dispatch)=>{
 dispatch(allProductFetchRequest());
-axios.get("http://localhost:8081/all",params)
+axios.get("https://e-shop24.herokuapp.com/api/all",params)
 .then((r)=>
 
 // console.log("r",r)
@@ -58,7 +58,7 @@ const allSingleProductFailure=()=>{
 
 export const allSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(allSingleProductRequest());
-axios.get(`http://localhost:8081/all/${payload}`)
+axios.get(`https://e-shop24.herokuapp.com/api/all/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(allSingleProductSuccess(r.data))
