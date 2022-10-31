@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, useNavigate } from 'react-router-dom';
+import TextTypewriter from '../../components/TextTypewriter';
 import { login } from '../../redux/auth/action';
 
 const Login = () => {
@@ -30,7 +31,8 @@ const Login = () => {
 
 
   return (
-    <div>
+    <div className='register'>
+    <TextTypewriter first="Welcome To" second="Login" />
       <input type="text" placeholder='Username' value={userName} onChange={(e)=>setUserName(e.target.value)}  />
       <input type="password" placeholder='Password' value={Password} onChange={(e)=>setPassword(e.target.value)}  />
       <button onClick={loginin}>
