@@ -24,3 +24,19 @@
     color: white;
     font-weight: bold;
   }
+  .active{
+    background-color: rgb(68, 59, 41);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 7px;
+  }
+  .notactive{
+    background-color: rgb(243, 178, 56);
+    color: white;
+  }
+  strong{
+    color: green;
+  }
+  .activecart{
+    color: rgb(240, 221, 187);
+  }

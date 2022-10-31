@@ -3,7 +3,8 @@ import {mensReducer} from "./mens/menReducer";
 import {womensReducer} from "./womens/womenReducer";
 import {cartReducer} from "./cart/cartReducer";
 import {accessoriesReducer} from "./accessories/accessoriesReducer";
-import {allReducer} from "./allProducts/allReducer"
+import {allReducer} from "./allProducts/allReducer";
+import {authReducer} from "./auth/authReducer"
 
 import thunk from "redux-thunk";;
 
@@ -13,7 +14,8 @@ const rootRuducer=combineReducers({
     womensReducer,
     cartReducer,
     accessoriesReducer,
-    allReducer
+    allReducer,
+    authReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

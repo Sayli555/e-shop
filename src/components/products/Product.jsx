@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -22,6 +22,11 @@ const dispatch=useDispatch()
 
   }
 
+  useEffect(()=>{
+    dispatch(AddToCart())
+},[])
+
+  
 
 
   
