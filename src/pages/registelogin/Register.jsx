@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4, v4 } from 'uuid';
 import { register } from '../../redux/auth/action';
 
@@ -8,6 +9,7 @@ const Register = () => {
   const [userName,setUserName]=useState("")
   const [Password,setPassword]=useState("");
   const dispatch=useDispatch();
+  const navigate=useNavigate()
 
 
   const registerButton=()=>{
@@ -15,7 +17,8 @@ const Register = () => {
       id:v4(),
       name,userName,Password
     }
-    dispatch(register(payload))
+    dispatch(register(payload));
+    navigate("/login")
   }
 
 

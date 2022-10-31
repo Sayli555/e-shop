@@ -10,7 +10,8 @@ const Cart = () => {
     const dispatch=useDispatch()
     const cartProducts=useSelector((state)=>state.cartReducer.cart);
     const TotalPrice=useSelector((state)=>state.cartReducer.TotalPrice);
-    const navigate=useNavigate()
+    const navigate=useNavigate();
+    const check=useSelector((state)=>state.authReducer.checkuser);
     useEffect(()=>{
         dispatch(AddToCart())
     },[])

@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { logout } from '../redux/auth/action';
 import { AddToCart } from '../redux/cart/action';
 import "./navbar.css";
 
 const Navbar = () => {
   const carttotal=useSelector((state)=>state.cartReducer.cart);
   const [cartNo,setCartno]=useState(carttotal.length);
-  const dispatch=useDispatch()
+  const dispatch=useDispatch();
 
   const location=useLocation();
-  console.log("location",location.pathname);
-  const [active,setActive]=useState("/")
+  // console.log("location",location.pathname);
+  const [active,setActive]=useState("/");
+
+ const check=useSelector((state)=>state.authReducer.checkuser);
+ console.log("check",check)
+
+ const navigate=useNavigate()
+
 
   useEffect(()=>{
     setActive(location.pathname)
@@ -25,6 +32,26 @@ const Navbar = () => {
     dispatch(AddToCart())
 },[])
 
+
+
+// ****************************login part***********************************************************
+
+const navbarLogin=()=>{
+
+  if(!check){
+   
+    navigate("/login");
+    
+
+  }
+  else if(check){
+    dispatch(logout())
+    navigate("/");
+  }
+  
+
+  
+}
   
   return (
     <div className='navbar'>
@@ -45,8 +72,11 @@ const Navbar = () => {
      
     </div>
     <div className='navbar-login-register'>
-    <div>
-    <Link to="/login" className={active=="/login"? "active link" : "Notactive link"}>LOGIN</Link>
+    <div className={active=="/login"? "active link" : "Notactive link"}  onClick={navbarLogin}>
+    {/* <Link to="/login" > */}
+    {check ? "LOGOUT" : "LOGIN"}
+   
+    {/* </Link> */}
     </div>
     <div>
       <Link to="/register" className={active=="/register"? "active link" : "Notactive link"}>REGISTER</Link>
