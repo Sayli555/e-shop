@@ -11,6 +11,12 @@ Link{
     text-decoration: none;
     color: black;
   }
+  .brand-filter-mobile1{
+    display: none;
+  }
+  .mobile-view-sort{
+    display: none;
+  }
 
   /* .filter-sort-input{
     border: none;
@@ -22,7 +28,27 @@ Link{
 
   @media screen and (max-width:780px){
     .brand-filter-mobile{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
+      display: none;
+      
     }
+    .filter_sort_div{
+      display: flex;
+    }
+    .brand-filter-mobile1{
+      display: block;
+    }
+    .filter_sort_div h2{
+      display: none;
+    }
+    .sorthide{
+      display: none;
+    }
+    .mobile-view-sort{
+      display: block;
+    }
+    /* .filter_sort_div select{
+      width: 100%;
+      padding: 5px;
+    }
+    */
   }

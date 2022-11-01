@@ -67,6 +67,7 @@ const Filter_Categories = ({category}) => {
 
 
 const handlesortby=(e)=>{
+      console.log(e.target.value,"click")
       setsort(e.target.value)
     }
   
@@ -131,7 +132,10 @@ console.log("brands",brand);
       ))}
       </div>
 
-      <div>
+{/* ***********************************laptop view end**************************************************** */}
+
+
+      <div className='sorthide'>
             <h2>Sort</h2>
             <div >
                   <input 
@@ -152,6 +156,45 @@ console.log("brands",brand);
                   <lable>High To Low</lable>
             </div>
       </div>
+
+
+
+
+      {/* ********************************mobile view***************************** */}
+   
+
+      <div className='brand-filter-mobile1'>
+      <select onChange={handlechange}>
+      <option>Filter By Brands</option>
+      {BrandFilterBy.map((brand)=>(
+           
+                  <option value={brand}>
+                  
+                  {brand}
+                
+                  </option>
+           
+       
+      ))}
+      </select>
+      </div>
+
+
+
+
+
+<div className='mobile-view-sort'>
+<select onChange={handlesortby} name="sortBy">
+<option>Sort By Price</option>
+<option value="ass">Low To Hight</option>
+<option value="desc">High To Low</option>
+</select>
+</div>
+
+
+   {/* ********************************mobile view end******************************************* */}
+   
+   
     </div>
   )
 }
