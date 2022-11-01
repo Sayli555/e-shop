@@ -46,9 +46,14 @@ Link{
     .mobile-view-sort{
       display: block;
     }
-    /* .filter_sort_div select{
-      width: 100%;
+   
+    .brand-filter-mobile1 select{
       padding: 5px;
+      border: none;
     }
-    */
+    .mobile-view-sort select{
+      padding: 5px;
+      border: none;
+    }
+   
   }
