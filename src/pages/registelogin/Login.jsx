@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import TextTypewriter from '../../components/TextTypewriter';
 import { login } from '../../redux/auth/action';
 
@@ -20,8 +21,13 @@ const Login = () => {
     if(payload){
       dispatch(login(payload));
      
-      alert("succesfully");
+      toast.success('Log In Succesfully', {
+        position: toast.POSITION.TOP_CENTER
+    });
+    setTimeout(()=>{
       navigate("/")
+    },2000)
+     
 
     }
     else {
@@ -31,6 +37,7 @@ const Login = () => {
 
 
   return (
+    <>
     <div className='register'>
     <TextTypewriter first="Welcome To" second="Login" />
       <input type="text" placeholder='Username' value={userName} onChange={(e)=>setUserName(e.target.value)}  />
@@ -40,6 +47,9 @@ const Login = () => {
       </button>
 
     </div>
+    <ToastContainer />
+    </>
+
   )
 }
 

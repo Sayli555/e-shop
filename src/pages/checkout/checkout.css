@@ -1,0 +1,64 @@
+.registermain{
+    width:43%;
+    height: auto;
+    margin: auto;
+    background-color: #fafafa;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.regh2{
+    text-align: center;
+}
+.fd1{
+    display: flex;
+    width:100%;
+    margin-bottom: 28px;
+    /* border: 1px solid black; */
+}
+.fname{
+   /* margin-left: 20px; */
+   margin-right: 30px;
+   width:70%;
+   height: 30px;
+   /* border: 1px solid black; */
+}
+
+input{
+    height: 30px;
+    border: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;}
+
+.fname>input{
+margin-right: 20px;
+width:100%;
+
+}
+.inputCheck>input{
+    width:20px;
+}
+.inputCheck>span{
+    margin-left: 15px;
+    
+}
+.Linput>input{
+    width:95%;
+    margin-bottom: 30px;
+}
+.creataccbtn{
+    padding: 10px;
+    background-color:green ;
+    color: white;
+    font-weight: bold;
+    width:200px;
+    border: none;
+}
+.creataccbtn:hover{
+    padding: 10px;
+    background-color:white ;
+    color: green;
+    font-weight: bold;
+    width:200px;
+    border: 2px solid green;
+}

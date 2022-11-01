@@ -2,8 +2,9 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import SingleProduct from '../components/products/SingleProduct'
 import Cart from './Cart'
-import Checkout from './Checkout'
+import Checkout from './checkout/Checkout'
 import Home from './Home'
+import Payment from './payment/Payment'
 import Accesories from './products/Accesories'
 import AllProduct from './products/AllProduct'
 import Mens from './products/Mens'
@@ -29,6 +30,7 @@ const MainRoutes = () => {
         <Route path="/all/:id" element={<SingleProduct/>} />
 
         <Route path="/womens/:id" element={<SingleProduct/>} />
+        <Route path="/payment" element={<Payment/>} />
       </Routes>
     </div>
   )

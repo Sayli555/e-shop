@@ -8,6 +8,7 @@ import { AddProductInCart, AddToCart } from '../../redux/cart/action';
 import { mensSingleDataGet } from '../../redux/mens/action';
 import { accessoriesSingleDataGet } from '../../redux/accessories/action';
 import { allSingleDataGet } from '../../redux/allProducts/action';
+import { toast, ToastContainer } from 'react-toastify';
 
 const SingleProduct = () => {
 
@@ -59,6 +60,12 @@ const SingleProduct = () => {
 
 
   const AddToCart=()=>{
+
+    toast.success('Product Add In Cart', {
+      position: toast.POSITION.TOP_RIGHT
+  });
+
+
     let totalPrice=quantity*single.price
     const payload={
       ...single,
@@ -79,6 +86,7 @@ const SingleProduct = () => {
 //  console.log(quantity)
   return (
    
+    <>
     
       <div className='single-products-main-div'>
       <div className='single-product-img'>
@@ -119,8 +127,8 @@ Add To Cart
       
     </div>
     
-   
-    
+    <ToastContainer />
+    </>
   )
 }
 

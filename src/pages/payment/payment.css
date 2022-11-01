@@ -1,0 +1,13 @@
+.paymentmain{
+    display: flex;
+    width:95%;
+    margin: auto;
+    margin-top: 20px;
+}
+.payment{
+    width:60%;
+}
+.paymentdetail{
+    width:30%;
+    margin-left: 3%;
+}

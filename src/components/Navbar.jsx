@@ -52,13 +52,19 @@ const navbarLogin=()=>{
 
   
 }
-  
+  // *******************************************************responsive part************************************
+
+
+  const [isMobile,setIsMobile]=useState(false);
+
+
+
   return (
     <div className='navbar'>
-    <div>
+    <div className='navbar-home'>
     <Link to="/"  className={active=="/"? "active link" : "Notactive link"}>HOME</Link>
     </div>
-
+    <div className='navbar-other-product'>
     <div className='navbar-products'>
     <div>
     <Link to="/mens" className={active=="/mens"? "active link" : "Notactive link"}>MENS</Link>
@@ -90,14 +96,36 @@ const navbarLogin=()=>{
       
     </div>
     
-   
+    </div>
+
     
+   
+    <button className='mobile-menu-icon'>
+           {isMobile? <i class="fa-solid fa-circle-xmark"></i> : <i class="fa-sharp fa-solid fa-bars"></i>}
+
+    </button>
       
-     
       
       
   
     </div>
+
+
+
+    
+
+
+
+
+
+   
+    
+
+    
+   
+    
+      
+  
   )
 }
 
