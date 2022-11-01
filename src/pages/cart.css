@@ -43,3 +43,15 @@ Link{
     text-decoration: none;
     color: black;
   }
+
+
+  @media screen and (max-width:780px){
+    .cart-main-div{
+        flex-direction: column;
+        width: 95%;
+    }
+    .cart-products{
+        margin: auto;
+        width: 98%;
+    }
+  }

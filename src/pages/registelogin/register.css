@@ -30,3 +30,11 @@
     color: orange;
     border: 2px solid orange;
 }
+
+
+@media screen and (max-width:780px){
+    .register{
+        width: 85%;
+
+    }
+}

@@ -26,10 +26,10 @@ const Cart = () => {
       navigate("/")
     }
 
-    if(!check){
-      return <Navigate to="/login" replace={true} />
-    }
-    else {
+    // if(!check){
+    //   return <Navigate to="/login" replace={true} />
+    // }
+    // else {
       return (
         <div className='cart-main-div'>
           <div className='cart-products'>
@@ -70,7 +70,7 @@ const Cart = () => {
           </div>
         </div>
       )
-    }
+    // }
 
 
  

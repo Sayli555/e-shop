@@ -143,9 +143,10 @@ border: none;
   @media screen and (max-width:780px){
     .productsDisplay
 {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,48%);
     grid-template-columns: repeat(auto,350px);
     width: 100%;
+    margin: auto;
 }
 .product_img{
     height: 130px;

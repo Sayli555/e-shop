@@ -62,3 +62,10 @@ width:100%;
     width:200px;
     border: 2px solid green;
 }
+
+@media screen and (max-width:780px){
+    .registermain{
+        width:96%;
+        margin: auto;
+    }
+}

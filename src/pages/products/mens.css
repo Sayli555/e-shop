@@ -41,6 +41,11 @@ Link{
    .mens{
     flex-direction: column;
     width: 95%;
+    margin: auto;
+    padding: 15px;
 
+   }
+   .products{
+    width: 95%;
    }
   }

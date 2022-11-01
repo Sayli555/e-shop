@@ -11,3 +11,15 @@
     width:30%;
     margin-left: 3%;
 }
+
+
+@media screen and (max-width:780px){
+    .paymentdetail{
+       display: none;
+    }
+    .payment{
+        width:96%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}

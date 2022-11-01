@@ -58,3 +58,31 @@ Link{
     text-decoration: none;
     color: black;
   }
+
+
+  @media screen and (max-width:780px){
+    .cart-product-img{
+        width: 92%;
+        padding: 3%;
+        margin: auto;
+        box-shadow: none;
+       
+    }
+    .cart-products-main-div{
+        flex-direction: column;
+        gap: 0;
+        width: 95%;
+        
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    }
+    .cart-product-info{
+        width: 92%;
+        margin: auto;
+        box-shadow: none;
+    }
+    .cart-product-info h2,h3 {
+        padding: 0;
+        margin: 0;
+    }
+  }
