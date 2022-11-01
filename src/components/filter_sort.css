@@ -18,3 +18,11 @@ Link{
     box-shadow: none;
     padding: 0;
   } */
+
+
+  @media screen and (max-width:780px){
+    .brand-filter-mobile{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+  }

@@ -117,7 +117,7 @@ console.log("brands",brand);
   return (
     <div className='filter_sort_div'>
       <h2>Filter By Brands</h2>
-
+      <div className='brand-filter-mobile'>
       {BrandFilterBy.map((brand)=>(
             <div>
             <input 
@@ -129,67 +129,8 @@ console.log("brands",brand);
             <lable>{brand}</lable>
       </div>
       ))}
+      </div>
 
-
-
-
-      {/* <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="BOBBI"
-            />
-            <lable>BOBBI</lable>
-      </div>
-      
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="BHFO"
-            />
-            <lable>BHFO</lable>
-      </div>
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="Merch"
-            />
-            <lable>Merch</lable>
-      </div>
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="Seven Times Six"
-            />
-            <lable>Seven Times Six</lable>
-      </div>
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="Pertemba US"
-            />
-            <lable>Pertemba US</lable>
-      </div>
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="Macy's"
-            />
-            <lable>Macy's</lable>
-      </div>
-      <div>
-            <input 
-            type="checkbox"
-            onChange={handlechange}
-            value="Authentic Designer Fashion"
-            />
-            <lable>Authentic Designer Fashion</lable>
-      </div> */}
       <div>
             <h2>Sort</h2>
             <div >

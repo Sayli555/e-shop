@@ -38,5 +38,9 @@ Link{
 
 
   @media screen and (max-width:780px){
-   
+   .mens{
+    flex-direction: column;
+    width: 95%;
+
+   }
   }

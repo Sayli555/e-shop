@@ -13,3 +13,10 @@
         color: orange;
     
 }
+
+
+@media screen and (max-width:780px){
+       .typerighte {
+        font-size: 25px;
+       }
+}
