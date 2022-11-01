@@ -31,7 +31,8 @@ function Payment() {
         name="card"
         placeholder="name on card" 
         // value={email}
-        // onChange={handlechange}       
+        // onChange={handlechange}     
+        className="checkout-input"   
         />
         </div>
         <div className="Linput">
@@ -41,6 +42,7 @@ function Payment() {
         type="number" 
         name="card number"
         placeholder="Card Number" 
+        className="checkout-input" 
         // value={age}
         // onChange={handlechange}       
         />

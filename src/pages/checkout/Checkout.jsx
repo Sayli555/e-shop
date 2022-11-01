@@ -38,7 +38,8 @@ const Checkout = () => {
         name="email"
         placeholder="first name.." 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange}    
+        className="checkout-input"   
         />
         </div>
         <div className="Linput">
@@ -49,7 +50,8 @@ const Checkout = () => {
         name="email"
         placeholder="last name..." 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange}   
+        className="checkout-input"    
         />
         </div>
         <div className="Linput">
@@ -60,7 +62,8 @@ const Checkout = () => {
         name="email"
         placeholder="email" 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange}   
+        className="checkout-input"    
         />
         </div>
         <div className="Linput">
@@ -71,7 +74,8 @@ const Checkout = () => {
         name="age"
         placeholder="contact number" 
         // value={age}
-        onChange={handlechange}       
+        onChange={handlechange}    
+        className="checkout-input"   
         />
         </div>
         <div className="Linput">
@@ -82,7 +86,8 @@ const Checkout = () => {
         name="email"
         placeholder="city" 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange}     
+        className="checkout-input"  
         />
         </div>
         <div className="Linput">
@@ -93,7 +98,8 @@ const Checkout = () => {
         name="email"
         placeholder="state" 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange} 
+        className="checkout-input"      
         />
         </div>
         <div className="Linput">
@@ -104,7 +110,8 @@ const Checkout = () => {
         name="email"
         placeholder="country" 
         // value={email}
-        onChange={handlechange}       
+        onChange={handlechange}     
+        className="checkout-input"  
         />
         </div>
     

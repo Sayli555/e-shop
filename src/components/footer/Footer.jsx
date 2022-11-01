@@ -226,7 +226,7 @@ const Footer = () => {
            ))}
         </div>
         <div className='feature'>
-            <h4>Popular Features</h4>
+            <h4>Brands</h4>
            {features.map((e)=>(
             <Link to={e.path} className="footerlink">
                <div key={e.name} className="footer_feature_single-div">{e.name}</div>
@@ -245,7 +245,7 @@ const Footer = () => {
            ))}
         </div>
         <div className='feature'>
-            <h4>Popular Features</h4>
+            <h4>Contact us</h4>
            {Comapny.map((e)=>(
             <Link to={e.path} className="footerlink">
                <div key={e.name} className="footer_feature_single-div">{e.name}</div>
@@ -255,7 +255,7 @@ const Footer = () => {
         </div>
         <div>
         <div className='feature'>
-            <h4>Popular Features</h4>
+            <h4>Customer Service</h4>
            {Costomers.map((e)=>(
             <Link to={e.path} className="footerlink">
                <div key={e.name} className="footer_feature_single-div">{e.name}</div>

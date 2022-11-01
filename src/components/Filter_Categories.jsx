@@ -124,6 +124,7 @@ console.log("brands",brand);
             type="checkbox"
             onChange={handlechange}
             value={brand}
+            className="filter-sort-input"
             />
             <lable>{brand}</lable>
       </div>
