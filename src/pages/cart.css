@@ -3,7 +3,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin: auto;
     display: flex;
-    gap: 1%;
+    
 }
 .cart-products{
     width:68%;
@@ -18,17 +18,21 @@
 }
 .cart-total-price-div{
     padding: 10px;
+    width: 32%;
 
 }
 .cart-total-price >div{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 22px;
 }
 .cart-total-price{
     padding: 10px;
+    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 }
+
 
 .cart-total-price >div button{
    color: white;
@@ -53,5 +57,14 @@ Link{
     .cart-products{
         margin: auto;
         width: 98%;
+    }
+    .cart-total-price{
+        padding: 5px;
+          
+    }
+    .cart-total-price-div{
+        width: 98%;
+        margin-top: 15px;
+        
     }
   }

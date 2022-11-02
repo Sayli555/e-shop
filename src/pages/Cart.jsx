@@ -26,10 +26,10 @@ const Cart = () => {
       navigate("/")
     }
 
-    // if(!check){
-    //   return <Navigate to="/login" replace={true} />
-    // }
-    // else {
+    if(!check){
+      return <Navigate to="/login" replace={true} />
+    }
+    else {
       return (
         <div className='cart-main-div'>
           <div className='cart-products'>
@@ -46,8 +46,9 @@ const Cart = () => {
                 </div>
           </div>
           <div className='cart-total-price-div' >
+          <h2>The Total Amount Of</h2>
              <div className='cart-total-price'>
-             <h2>The Total Amount Of</h2>
+             
                <div >
                 <h4>Product Amount</h4>
                 <h4>Rs{" "}{TotalPrice}/-</h4>
@@ -70,7 +71,7 @@ const Cart = () => {
           </div>
         </div>
       )
-    // }
+     }
 
 
  

@@ -103,12 +103,14 @@ const SingleProduct = () => {
         <h2>Rs{" "}{single.price*quantity}/-</h2>
 
     <div className='single-plus-min'>
-  <button onClick={()=>quantityadding(-1)}>
-    <AiOutlineMinus className='cartaddicon'/>
+  <button onClick={()=>quantityadding(-1)} className='cartaddicon'>
+    {/* <AiOutlineMinus className='cartaddicon'/> */}
+    -
   </button>
   <span>{quantity}</span>
-  <button onClick={()=>quantityadding(1)}>
-    <AiOutlinePlus className='cartaddicon' />
+  <button onClick={()=>quantityadding(1)} className='cartaddicon'>
+    {/* <AiOutlinePlus className='cartaddicon' /> */}
+    +
   </button>
 </div>
 <div className='single-product-button'>
