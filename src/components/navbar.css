@@ -13,7 +13,7 @@
   display: flex;
   width: 80%;
   justify-content: space-between;
-  /* border: 1px solid black; */
+
 }
 .navbar-products{
     display: flex;
@@ -53,29 +53,105 @@
     display: none;
   }
 
-  /* @media screen and (max-width:780px){
-.navbar-other-product{
-  display: none;
+
+/* **********************************responsive mobile-view******************************************************* */
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+.navbar-mobile{
+    display: none;
+    
+    align-items: center;
+    height: 55px;
+    background-color: orange;
+    color: white;
+
+}
+
 .nav-links{
-  display: none;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
 }
 
-.nav-links-mobile{
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 75;
-  transition: all 0.5s ease-out;
-  width:80%;
-  background-color: orange;
+
+.home,
+
+
+.signup{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    
 }
 
-.mobile-menu-icon{
-  display: block;
-  position: absolute;
-  font-size: 30px;
-  color: white;
-  
+.mobile-menu-icons{
+    display: none;
 }
-  } */
+.home{
+  list-style: none;
+}
+
+@media screen and (max-width:780px) {
+  .navbar{
+    display: none;
+  }
+  .navbar-mobile{
+    display: block;
+  }
+    .logo{
+        display: flex;
+        position: absolute;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-mobile-links{
+        display: block;
+        position: absolute;
+        list-style: none;
+        padding: 15px;
+        box-sizing: border-box;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        background-color: #ffa900;
+        right: 0;
+   
+        top: 10px;
+        transition: all 0.5s ease-out;
+        width: 50%;
+    }
+ 
+.home,
+
+
+.signup{
+    transition: all 0.5s ease;
+}
+
+.mobile-menu-icons{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 173, 41);
+    color: black;
+    top: 10px;
+    right: 25px;
+}
+.mobile-login{
+  font-size: 18px;
+  font-weight: bold;
+}
+}

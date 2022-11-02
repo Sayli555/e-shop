@@ -60,6 +60,8 @@ const navbarLogin=()=>{
 
 
   return (
+    
+    <nav>
     <div className='navbar'>
     <div className='navbar-home'>
     <Link to="/"  className={active=="/"? "active link" : "Notactive link"}>HOME</Link>
@@ -100,28 +102,76 @@ const navbarLogin=()=>{
 
     
    
-    <button className='mobile-menu-icon'>
-           {isMobile? <i class="fa-solid fa-circle-xmark"></i> : <i class="fa-sharp fa-solid fa-bars"></i>}
-
-    </button>
-      
-      
+   
       
   
     </div>
 
 
 
+     {/* ************************************responsive nvbar************************************** */}
+
+
     
 
+<div className='navbar-mobile'>
+        <h3 className='logo'>
+        <Link to="/"  className="home">HOME</Link>
+        </h3>
+        <ul className={isMobile? "nav-mobile-links" : "nav-links"}
+        onClick={()=>{setIsMobile(false)}}
+        >
+            <Link to="/mens" className="home">
+            <li>MENS</li>
+            </Link>
+            <Link to="/womens" className="home">
+            <li>WOMENS</li>
+            </Link>
+            <Link to="/accessories" className="home">
+            <li>ACCESSORIES</li>
+            </Link>
 
+
+            {/* <div > */}
+   <li className=" mobile-login" onClick={navbarLogin}>
+    {check ? "LOGOUT" : "LOGIN"}
+   
+    </li>
+     {/* </div> */}
+    
+       <Link to="/register" className="home">
+       <li>
+        REGISTER
+       </li>
+       </Link>
+   
+
+  
+    <Link to="/cart" className="home">
+    <li>
+    CART<strong
+    className={active=="/cart"? "activecart " : "Notactive "}
+    >({cartNo})</strong>
+    </li>
+    </Link>
+   
+            
+           
+        </ul>
+       
+        <button className='mobile-menu-icons' 
+        onClick={()=>setIsMobile(!isMobile)}
+        >
+            {isMobile ? <i className='fas fa-times'></i> : <i className='fas fa-bars'></i> }
+        </button>
+    </div>
 
 
 
    
-    
+  
 
-    
+</nav>
    
     
       
