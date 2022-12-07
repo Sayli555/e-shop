@@ -11,7 +11,7 @@ const Navbar = () => {
   const dispatch=useDispatch();
 
   const location=useLocation();
-  // console.log("location",location.pathname);
+  console.log("location");
   const [active,setActive]=useState("/");
 
  const check=useSelector((state)=>state.authReducer.checkuser);

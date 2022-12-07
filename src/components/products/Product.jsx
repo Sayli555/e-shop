@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
-import { AddToCart } from '../../redux/cart/action';
+import { AddProductInCart, AddToCart } from '../../redux/cart/action';
 
 import "./product.css";
 
@@ -19,11 +19,12 @@ const dispatch=useDispatch()
   });
    const payload={...product}
     dispatch(AddToCart(payload))
-
+    dispatch(AddProductInCart(payload))
   }
 
   useEffect(()=>{
     dispatch(AddToCart())
+
 },[])
 
   

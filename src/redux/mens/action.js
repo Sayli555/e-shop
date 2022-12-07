@@ -23,7 +23,7 @@ const mensProductFetchFailure=()=>{
 
 export const mensDataGet=(params)=>(dispatch)=>{
 dispatch(mensProductFetchRequest());
-axios.get("https://e-shop24.herokuapp.com/api/mens",params)
+axios.get("https://eshop-zcww.onrender.com/mens",params)
 .then((r)=>
 
 // console.log("r",r)
@@ -58,7 +58,7 @@ const mensSingleProductFailure=()=>{
 
 export const mensSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(mensSingleProductRequest());
-axios.get(`https://e-shop24.herokuapp.com/api/mens/${payload}`)
+axios.get(`https://eshop-zcww.onrender.com/mens/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(mensSingleProductSuccess(r.data))

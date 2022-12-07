@@ -24,7 +24,7 @@ const AddToCartFailure=()=>{
 
 export const AddToCart=(payload)=>(dispatch)=>{
 dispatch(AddToCartRequest());
-axios.get("https://e-shop24.herokuapp.com/api/cart")
+axios.get("https://eshop-zcww.onrender.com/cart")
 .then((r)=>
 // console.log("r",r)
 dispatch(AddToCartSuccess(r.data))
@@ -58,7 +58,7 @@ const AddProductInCartFailure=()=>{
 
 export const AddProductInCart=(payload)=>(dispatch)=>{
 dispatch(AddProductInCartRequest());
-axios.post("https://e-shop24.herokuapp.com/api/cart",payload)
+axios.post("https://eshop-zcww.onrender.com/cart",payload)
 .then((r)=>
 // console.log("r",r)
 dispatch(AddProductInCartSuccess(r.data))
@@ -92,7 +92,7 @@ const removeCartFailure=()=>{
 
 export const removeCart=(payload)=>(dispatch)=>{
 dispatch(removeCartRequest());
-axios.delete(`https://e-shop24.herokuapp.com/api/cart/${payload}`)
+axios.delete(`https://eshop-zcww.onrender.com/${payload}`)
 .then((r)=>
 // console.log("r",r)
 dispatch(removeCartSuccess(r.data))
