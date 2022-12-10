@@ -23,7 +23,7 @@ const mensProductFetchFailure=()=>{
 
 export const mensDataGet=(params)=>(dispatch)=>{
 dispatch(mensProductFetchRequest());
-axios.get("https://eshop-zcww.onrender.com/mens",params)
+axios.get("https://e-shop-store.up.railway.app/api/mens",params)
 .then((r)=>
 
 // console.log("r",r)
@@ -58,7 +58,7 @@ const mensSingleProductFailure=()=>{
 
 export const mensSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(mensSingleProductRequest());
-axios.get(`https://eshop-zcww.onrender.com/mens/${payload}`)
+axios.get(`https://e-shop-store.up.railway.app/api/mens/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(mensSingleProductSuccess(r.data))

@@ -1586,42 +1586,5 @@
       "updatedAt": "2022-05-04T06:54:24.957Z"
     }
   ],
-  "cart": [
-    {
-      "id": "627223200b3db42170cd2423",
-      "Name": "Michael Kors AVA Extra Small Crossbody Leather Bag",
-      "brand": "LUX LAIR",
-      "imageurl": "https://img.shop.com/Image/290000/290400/290461/products/1928871295.jpg?size=400x400",
-      "typeofproduct": "Silver Buckle Belt",
-      "price": "3200",
-      "createdAt": "2022-05-04T06:54:24.957Z",
-      "updatedAt": "2022-05-04T06:54:24.957Z",
-      "totalPrice": 3200,
-      "quantity": 1
-    },
-    {
-      "id": "627217480b3db42170ba0411",
-      "Name": "Adrianna Papell Womens Crop Square Neck Tank Top",
-      "brand": "BOBBI",
-      "imageurl": "https://img.shop.com/Image/270000/273200/273200/products/1930607796.jpg?size=400x400",
-      "typeofproduct": "women's tank top",
-      "price": 2500,
-      "createdAt": "2022-05-04T06:03:52.492Z",
-      "updatedAt": "2022-05-04T06:03:52.492Z",
-      "totalPrice": 2500,
-      "quantity": 1
-    },
-    {
-      "id": "627223200b3db42170ba2423",
-      "Name": "CTM Men's Elastic Braided Stretch Belt with Silver Buckle",
-      "brand": "Belt Outlet",
-      "imageurl": "https://img.shop.com/Image/280000/280600/280604/products/1825990674.jpg?size=400x400",
-      "typeofproduct": "Silver Buckle Belt",
-      "price": "1200",
-      "createdAt": "2022-05-04T06:54:24.957Z",
-      "updatedAt": "2022-05-04T06:54:24.957Z",
-      "totalPrice": 1200,
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }

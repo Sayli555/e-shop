@@ -18,6 +18,7 @@ const CartS = ({cartpr}) => {
 
 const removeCartItem=(id)=>{
   dispatch(removeCart(id));
+  dispatch(AddToCart());
  setRemoveUpdate(!removeupdate)
   
 }

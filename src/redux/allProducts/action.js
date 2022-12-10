@@ -23,7 +23,7 @@ const allProductFetchFailure=()=>{
 
 export const allDataGet=(params)=>(dispatch)=>{
 dispatch(allProductFetchRequest());
-axios.get("https://eshop-zcww.onrender.com/all",params)
+axios.get("https://e-shop-store.up.railway.app/api/all",params)
 .then((r)=>
 
 // console.log("r",r)
@@ -58,7 +58,7 @@ const allSingleProductFailure=()=>{
 
 export const allSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(allSingleProductRequest());
-axios.get(`https://eshop-zcww.onrender.com/${payload}`)
+axios.get(`https://e-shop-store.up.railway.app/api/all/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(allSingleProductSuccess(r.data))

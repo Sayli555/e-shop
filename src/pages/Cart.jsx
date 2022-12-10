@@ -40,9 +40,7 @@ const Cart = () => {
                 <CartS cartpr={e}  />
                 )
                }
-                 
-                
-                   
+                         
                 </div>
           </div>
           <div className='cart-total-price-div' >
@@ -72,9 +70,5 @@ const Cart = () => {
         </div>
       )
      }
-
-
- 
 }
-
 export default Cart
