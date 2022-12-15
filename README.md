@@ -1,7 +1,6 @@
-### E-Shop-Ecommerce-Clone
 
-## Learn More
 
+## E-Shop-Ecommerce-Clone
 
 I clone the website using below stacks. 
     `For Frontend` :- React, Redux , HTNL , CSS , JavaScript
