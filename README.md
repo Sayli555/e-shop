@@ -1,5 +1,8 @@
 ### E-Shop-Ecommerce-Clone
 
+I clone the website using below stacks. The clone is not defined the complete website but some functionalities of website like, Landing page, account & sign in section men, women product, payment page, cart checkout section  And Footer Part .
+Before sharing my experience about that project we want to show some snippets of our web-site.
+
 <img src="https://github.com/Sayli555/project-images/blob/master/E-shop.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/login.png?raw=true"/>
