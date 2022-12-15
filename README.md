@@ -3,6 +3,8 @@
 I clone the website using below stacks. The clone is not defined the complete website but some functionalities of website like, Landing page, account & sign in section men, women product, payment page, cart checkout section  And Footer Part .
 Before sharing my experience about that project we want to show some snippets of our web-site.
 
+### `Desktop view`
+
 <img src="https://github.com/Sayli555/project-images/blob/master/E-shop.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/login.png?raw=true"/>
@@ -10,13 +12,13 @@ Before sharing my experience about that project we want to show some snippets of
 <img src="https://github.com/Sayli555/project-images/blob/master/mobileview.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/productmobile.png?raw=true"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 
 
 In the project directory, you can run:
 
-### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
