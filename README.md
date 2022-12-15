@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+## E-Shop-Ecommerce-Clone
 
 <img src="https://github.com/Sayli555/project-images/blob/master/E-shop.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true"/>
@@ -9,7 +9,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
 
 In the project directory, you can run:
 
