@@ -18,6 +18,9 @@ Before sharing my experience about that project we want to show some snippets of
 `Footer Page`
 
 <img src="https://github.com/Sayli555/project-images/blob/master/footer.png?raw=true"/>
+
+### `Mobile view` 
+
 <img src="https://github.com/Sayli555/project-images/blob/master/mobileview.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/productmobile.png?raw=true"/>
 
