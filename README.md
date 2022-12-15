@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-<img src="[https://miro.medium.com/max/1400/1*qbNf_ZZeIlS_pOIcuwDcVQ.png](https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true)"/>
+<img src="https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true"/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
