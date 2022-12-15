@@ -6,6 +6,8 @@ Before sharing my experience about that project we want to show some snippets of
 ### `Desktop view`
 
 <img src="https://github.com/Sayli555/project-images/blob/master/E-shop.png?raw=true"/>
+
+`Product are `filter` by Brands and `sort` by Price`
 <img src="https://github.com/Sayli555/project-images/blob/master/allproducts%20(1).png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/login.png?raw=true"/>
 <img src="https://github.com/Sayli555/project-images/blob/master/footer.png?raw=true"/>
