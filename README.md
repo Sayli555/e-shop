@@ -1,6 +1,10 @@
 ### E-Shop-Ecommerce-Clone
 
-I clone the website using below stacks. The clone is not defined the complete website but some functionalities of website like, Landing page, account & sign in section men, women product, payment page, cart checkout section  And Footer Part .
+I clone the website using below stacks. 
+    `For Frontend` :- React, Redux , HTNL , CSS , JavaScript
+    `For Backend` :- Json-server deploy on railway.
+    
+The clone is not defined the complete website but some functionalities of website like, Landing page, account & sign in section men, women product, payment page, cart checkout section  And Footer Part .
 Before sharing my experience about that project we want to show some snippets of our web-site.
 
 ### `Desktop view`
