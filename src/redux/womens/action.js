@@ -23,7 +23,7 @@ const womensProductFetchFailure=()=>{
 
 export const womensDataGet=(params)=>(dispatch)=>{
 dispatch(womensProductFetchRequest());
-axios.get("https://e-shop-store.up.railway.app/api/womens",params)
+axios.get("https://eshopren.onrender.com/womens",params)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(womensProductFetchSuccess(r.data))
@@ -58,7 +58,7 @@ const womensSingleProductFailure=()=>{
 
 export const womensSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(womensSingleProductRequest());
-axios.get(`https://e-shop-store.up.railway.app/api/womens/${payload}`)
+axios.get(`https://eshopren.onrender.com/womens/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(womensSingleProductSuccess(r.data))

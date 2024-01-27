@@ -24,7 +24,7 @@ const AddToCartFailure=()=>{
 
 export const AddToCart=(payload)=>(dispatch)=>{
 dispatch(AddToCartRequest());
-axios.get("https://e-shop-store.up.railway.app/api/cart")
+axios.get("https://eshopren.onrender.com/cart")
 .then((r)=>
 // console.log("r",r)
 dispatch(AddToCartSuccess(r.data))
@@ -58,7 +58,7 @@ const AddProductInCartFailure=()=>{
 
 export const AddProductInCart=(payload)=>(dispatch)=>{
 dispatch(AddProductInCartRequest());
-axios.post("https://e-shop-store.up.railway.app/api/cart",payload)
+axios.post("https://eshopren.onrender.com/cart",payload)
 .then((r)=>
 // console.log("r",r)
 dispatch(AddProductInCartSuccess(r.data))
@@ -92,7 +92,7 @@ const removeCartFailure=()=>{
 
 export const removeCart=(payload)=>(dispatch)=>{
 dispatch(removeCartRequest());
-axios.delete(`https://e-shop-store.up.railway.app/api/cart/${payload}`)
+axios.delete(`https://eshopren.onrender.com//cart/${payload}`)
 .then((r)=>
 // console.log("r",r)
 dispatch(removeCartSuccess(r.data))

@@ -23,7 +23,7 @@ const accessoriesProductFetchFailure=()=>{
 
 export const accessoriesDataGet=(params)=>(dispatch)=>{
 dispatch(accessoriesProductFetchRequest());
-axios.get("https://e-shop-store.up.railway.app/api/accessories",params)
+axios.get("https://eshopren.onrender.com/accessories",params)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(accessoriesProductFetchSuccess(r.data))
@@ -58,7 +58,7 @@ const accessoriesSingleProductFailure=()=>{
 
 export const accessoriesSingleDataGet=(payload)=>(dispatch)=>{
 dispatch(accessoriesSingleProductRequest());
-axios.get(`https://e-shop-store.up.railway.app/api/accessories/${payload}`)
+axios.get(`https://eshopren.onrender.com/accessories/${payload}`)
 .then((r)=>
 // console.log("r",r.data)
 dispatch(accessoriesSingleProductSuccess(r.data))
